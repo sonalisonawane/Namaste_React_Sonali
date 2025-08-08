@@ -1,0 +1,34 @@
+{
+    "name": "namaste_react_sonali",
+    "version": "1.0.0",
+    "description": "This is react learning Repo",
+    "main": "App.js",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html",
+        "test": "Jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sonalisonawane/Namaste_React_Sonali.git"
+    },
+    "keywords": [
+        "React",
+        "Namaste",
+        "React"
+    ],
+    "author": "Sonali Sonawane",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sonalisonawane/Namaste_React_Sonali/issues"
+    },
+    "homepage": "https://github.com/sonalisonawane/Namaste_React_Sonali#readme",
+    "dependencies": {
+        "parcel": "^2.13.3",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "process": "^0.11.10"
+    }
+}
