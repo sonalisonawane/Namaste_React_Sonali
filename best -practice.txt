@@ -1,0 +1,2 @@
+1) never use index of map  as a key for a component.
+2) keep your component small upto 100 lines maximum, keep it clean.
