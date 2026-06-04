@@ -58,13 +58,16 @@ li {
 }
 
 input[type="text"] {
+    background-color: #f5ece9;
+    border: none;
+    border-radius: 5px;
     width: 600px;
     height: 50px;
-    border-radius: 5px;
-    border: none;
-    background-color: #fec7ac;
-    margin: 20px 174px;
-    box-shadow: -1px 2px 4px grey;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 10px;
+    box-shadow: -1px 1px 2px gray;
 }
 
 input::placeholder {
@@ -99,8 +102,16 @@ button.filter-btn {
 
 .user-class {
     border: 1px solid black;
-    width: 300px;
+    width: auto;
     height: 200px;
     margin: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.profile-img img {
+    height: 151px;
+    width: 151px;
 }
