@@ -7,19 +7,19 @@ import useOnlineStatus from "../utils/useOnlineStatus/useOnlineStatus";
 const Header=()=>{
     const onlineStatus = useOnlineStatus();
     return( 
-    <div className="header">
+    <div className="flex justify-between bg-amber-600 items-center font-bold">
      <div className="logo-container">
-         <img className="logo" src={logo}></img>
+         <img className="w-25 h-25" src={logo}></img>
     </div>
-    <div className="nav-items">
-         <ul>
-             <li>{onlineStatus?"online:🟢 ":"offline : 🔴"}</li>
-             <li><Link to="/">Home</Link></li>
-             <li><Link to="/about">About Us</Link></li>
-             <li><Link to="/contact">Contact Us</Link></li>
-             <li>Cart</li>
+   
+         <ul className="flex item-center justify-between">
+             <li className="p-5">{onlineStatus?"online:🟢 ":"offline : 🔴"}</li>
+             <li className="p-5"><Link to="/">Home</Link></li>
+             <li className="p-5"><Link to="/about">About Us</Link></li>
+             <li className="p-5"><Link to="/contact">Contact Us</Link></li>
+             <li className="p-5">Cart</li>
          </ul>
-    </div>
+   
      </div>
      )
  }

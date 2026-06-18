@@ -18,10 +18,11 @@ const RestaurantCard = (props) => {
     } = resData;
 
     return (
-        <Link to={`/restaurant-menu/${resData.id}`}><div className="res-card">
+        <Link to={`/restaurant-menu/${resData.id}`}>
+            <div className="w-60 mx-5 flex items-start flex-col overflow-visible justify-center">
 
             <img
-                className="card-image"
+                className="size-60"
                 src={CDN_URL + cloudinaryImageId}
                 alt={name}
             />
