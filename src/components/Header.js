@@ -8,9 +8,11 @@ const Header=()=>{
     const onlineStatus = useOnlineStatus();
     return( 
     <div className="flex justify-between bg-amber-600 items-center font-bold">
+    <Link to="/">
      <div className="logo-container">
          <img className="w-25 h-25" src={logo}></img>
     </div>
+    </Link>
    
          <ul className="flex item-center justify-between">
              <li className="p-5">{onlineStatus?"online:🟢 ":"offline : 🔴"}</li>

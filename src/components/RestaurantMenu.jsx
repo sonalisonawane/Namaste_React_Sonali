@@ -10,8 +10,8 @@ const RestaurantMenu = ()=>{
 
     const fetchHandler = async () => {
         try{
-        const response = await fetch(`
-        https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.6837923&lng=73.8082866&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`);
+        const response = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(
+            `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.6837923&lng=73.8082866&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`)}`);
         const text = await response.text();
         console.log("Raw Response",text);
         if(!text){

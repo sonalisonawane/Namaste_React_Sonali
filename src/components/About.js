@@ -1,6 +1,5 @@
 import React from 'react'
 import {useState,useEffect} from 'react';
-import search_icon from "../../Assets/search_icon.png";
 
 function About() {
 const [user,setUser] = useState(null);

@@ -24,6 +24,7 @@ const useListRestaurants = () => {
                     ?.restaurants || [];
                 setListOfRestaurant(restaurants);
                 setAllRestaurants(restaurants);
+                console.log(restaurants,"restaurant");
 }
 function clickHandler() {
 
